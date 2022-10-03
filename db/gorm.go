@@ -30,8 +30,5 @@ func ConnectGorm() *gorm.DB {
 	db.Debug().AutoMigrate(models.Item{})
 	db.Debug().AutoMigrate(models.Orders{})
 
-	// Create
-	// db.Create(&models.Orders{Order_Id: "jaka", Customer_Name: "Perum Griya Rajeg Lestari"})
-
 	return db
 }
